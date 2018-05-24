@@ -30,7 +30,8 @@ secret access key.
 3.-Go to the bucket in S3 console:
    Click in Permissions tab > Click On Bucket Policy
    Add this code with arn:aws:iam line change and with bucket_name changed with your own name:
-   {
+   ```
+   {
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -51,6 +52,7 @@ secret access key.
         }
     ]
 }
+```
 
 4.-Add the key to the server access credentials:
    (You need install AWS Client if you don't have)
